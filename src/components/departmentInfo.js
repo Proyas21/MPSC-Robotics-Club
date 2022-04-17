@@ -1,12 +1,15 @@
 import { useParams } from "react-router-dom";
 import Member from "./member";
+import ScrollToTop from "./scrollToTop";
+import Metas from "./metas";
 
 const DepartmentInfo = ({ departments_info }) => {
   const { department } = useParams();
-  const info = departments_info.filter((dep) => dep.route == department)[0];
+  const info = departments_info.filter((dep) => dep.route === department)[0];
 
   return (
     <div className="department-info">
+      <ScrollToTop />
       <h1>{info.name}</h1>
       <p>{info.intro}</p>
 
@@ -23,6 +26,11 @@ const DepartmentInfo = ({ departments_info }) => {
           );
         })}
       </div>
+      <Metas
+        title={info.name + " - MPSC Robotics Club"}
+        description={info.name + " of MPSC Robotics Club. " + info.intro}
+        image={info.logo}
+      />
     </div>
   );
 };

@@ -13,10 +13,13 @@ body {
   display: flex;
   flex-direction: column;
 }
+#root > div {
+  margin-inline: 8%;
+}
 a {
   display: inline-block;
   text-decoration: none;
-  color: #c0ec3f;
+  color: white;
 }
 a:hover {
   text-decoration: underline;
@@ -24,7 +27,7 @@ a:hover {
 .App-body {
   position: relative;
   align-items: center;
-  color: #c0ec3f;
+  color: white;
   padding: 20px;
   text-align: center;
   font-size: xx-large;
@@ -38,7 +41,7 @@ a:hover {
 }
 .intro {
   /* text-align: center; */
-  color: #c0ec3f;
+  color: white;
 }
 .departments {
   color: white;
@@ -52,10 +55,7 @@ a:hover {
 .logo {
   height: 80px;
   border-radius: 50%;
-  padding: 10px;
-  margin-left: 40px;
 }
-
 .App-header {
   /* background-color: #282c34; */
   background-color: #121212;
@@ -63,17 +63,20 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid white;
+  padding-inline: 7%;
 }
 
 .navs a {
+  width: 200px;
   text-align: center;
   font-weight: bold;
   font-family: torek;
-  margin: 20px;
   text-decoration: none;
   font-size: large;
   color: white;
   text-transform: uppercase;
+  transition-duration: 100ms;
+  transition-timing-function: ease-in-out;
 }
 .navs a:hover {
   color: #c0ec3f;
@@ -110,11 +113,11 @@ footer p {
   margin: 5px;
 }
 .footer-rights {
-  color: #c0ec3f;
+  color: white;
   font-weight: bold;
 }
 .footer-email {
-  color: #c0ec3f;
+  color: white;
   font-weight: bold;
   text-transform: none;
 }
@@ -138,7 +141,7 @@ footer p {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  color: #c0ec3f;
+  color: white;
   font-family: torek;
 }
 .departments a {
@@ -154,7 +157,7 @@ footer p {
 .department-info,
 .about {
   text-align: center;
-  color: #c0ec3f;
+  color: white;
   font-family: torek;
 }
 .members-info {
@@ -167,6 +170,7 @@ footer p {
   margin: 0;
 }
 .member-photo {
+  border-radius: 15px;
   width: 200px;
 }
 
@@ -196,7 +200,7 @@ footer p {
 
 /* panel mebers */
 .panel-members {
-  color: #c0ec3f;
+  color: white;
   font-family: torek;
   text-align: center;
 }
@@ -212,30 +216,46 @@ footer p {
 
 @media screen and (max-width: 950px) {
   .navs a {
-    padding: 5px;
-    font-size: large;
+    font-size: medium;
+    width: 140px;
+  }
+  .navs a:nth-child(2) {
+    width: 200px;
+  }
+  .navs a:hover {
+    font-size: larger;
   }
 }
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 680px) {
   .App-body {
     font-size: medium;
   }
   .App-header {
     flex-direction: column;
   }
-  .navs {
-    display: none;
-    border-top: 2px solid white;
-  }
-  .navs a {
-    margin: 5px;
-    font-size: large;
-  }
-  .navs-active {
+  nav {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
   }
+  .navs {
+    height: 0;
+    overflow: hidden;
+  }
+  .navs-active {
+    border-top: 1px solid white;
+    height: 150px;
+  }
+  .navs a {
+    width: 100%;
+    margin: 7px;
+    font-size: large;
+    height: 30px;
+  }
+
   .notnavs {
     width: 100%;
   }

@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
-
+import Metas from "./metas";
 const About = () => {
   return (
     <div className="about">
+      <h1>ABOUT US</h1>
       <p>
         Hello, good people! Welcome to the official website of Mohammadpur
         Preparatory School And College Robotics Club! We’ve founded this
@@ -48,6 +49,13 @@ const About = () => {
         <Link to="/about/panel-members">Panel Members</Link>
         <Link to="/donate">Donate Us</Link>
       </div>
+
+      <Metas
+        title={"About Us - MPSC Robotics Club"}
+        description={
+          "Our vision is simple. We want to inspire the younger generation to explore the beauty of Robotics. We want to be the gateway through which the younger generation steps foot into the magical realm of Robotics where opportunities are infinite and satisfaction is at its peak. We want them to explore this field because the future will be revolved around astonishing Robots that will ease the burden on humanity."
+        }
+      />
     </div>
   );
 };

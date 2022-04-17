@@ -9,14 +9,16 @@ const Header = () => {
   return (
     <header className="App-header">
       <div className="notnavs">
-        <Link to="/">
+        <a href="/" className="logo_link">
           <img src={logo} className="logo" alt="logo" />
-        </Link>
+        </a>
         <Hamborgir Activate={setactiveBorgir} />
       </div>
       <nav className={activeBorgir ? "navs navs-active" : "navs"}>
-        <Link to="/">Home</Link>
-        <Link to="departments">Departments</Link>
+        <a href="/">Home</a>
+        <Link to="departments" className="dep-link">
+          Departments
+        </Link>
         <Link to="about">About Us</Link>
       </nav>
     </header>

@@ -1,7 +1,9 @@
 import panelMembers from "./panelMembersArray";
+import ScrollToTop from "./scrollToTop";
 const PanelMembers = () => {
   return (
     <div className="panel-members">
+      <ScrollToTop />
       <h1>Panel Members</h1>
       {panelMembers.map((member, i) => {
         return (
