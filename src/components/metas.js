@@ -28,7 +28,8 @@ const Metas = ({ title, description, image }) => {
       <meta
         name="twitter:image"
         content={
-          window.location.href + (image ? image : require("../img/poster.jpeg"))
+          "https://mpsc-rc.web.app/" +
+          (image ? image : require("../img/poster.jpeg"))
         }
       />
     </Helmet>
