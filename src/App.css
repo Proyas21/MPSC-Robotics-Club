@@ -1,278 +1,279 @@
 @font-face {
-  font-family: "torek";
-  src: url("./Toreks Regular.otf");
+    font-family: "torek";
+    src: url("./Toreks Regular.otf");
 }
 
 body {
-  background-image: url("./img/bback.jpeg");
+    background-image: url("./img/bback.jpeg");
 }
 
 #root {
-  height: 100vh;
-  position: relative;
-  display: flex;
-  flex-direction: column;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 #root > div {
-  margin-inline: 8%;
+    margin-inline: 8%;
 }
 a {
-  display: inline-block;
-  text-decoration: none;
-  color: white;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
 }
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 .App-body {
-  position: relative;
-  align-items: center;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  font-size: xx-large;
-  letter-spacing: 2px;
-  word-spacing: 4px;
-  font-family: torek;
+    position: relative;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: xx-large;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    font-family: torek;
 }
 .nobglogo {
-  width: 100px;
-  margin-top: 20px;
+    width: 100px;
+    margin-top: 20px;
 }
 .intro {
-  /* text-align: center; */
-  color: white;
+    /* text-align: center; */
+    color: white;
 }
 .departments {
-  color: white;
+    color: white;
 }
 .poster {
-  width: 100%;
-  object-fit: cover;
-  height: auto;
+    width: 100%;
+    object-fit: cover;
+    height: auto;
 }
 
 .logo {
-  height: 80px;
-  border-radius: 50%;
+    height: 80px;
+    border-radius: 50%;
 }
 .App-header {
-  /* background-color: #282c34; */
-  background-color: #121212;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid white;
-  padding-inline: 7%;
+    /* background-color: #282c34; */
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    padding-inline: 7%;
 }
 
 .navs a {
-  width: 200px;
-  text-align: center;
-  font-weight: bold;
-  font-family: torek;
-  text-decoration: none;
-  font-size: large;
-  color: white;
-  text-transform: uppercase;
-  transition-duration: 100ms;
-  transition-timing-function: ease-in-out;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+    font-family: torek;
+    text-decoration: none;
+    font-size: large;
+    color: white;
+    text-transform: uppercase;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in-out;
 }
 .navs a:hover {
-  color: #c0ec3f;
-  font-size: larger;
-  text-decoration: underline;
+    color: #c0ec3f;
+    font-size: larger;
+    text-decoration: underline;
 }
 
 .notnavs {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .poster {
-  height: auto;
+    height: auto;
 }
 
 footer {
-  margin-top: auto;
-  color: white;
-  width: 100%;
-  text-align: center;
-  text-transform: uppercase;
-  border-top: 1px solid white;
-  height: 0px;
-  overflow-y: hidden;
-  padding-top: 30px;
-  background-color: black;
+    margin-top: auto;
+    color: white;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 1px solid white;
+    height: 0px;
+    overflow-y: hidden;
+    padding-top: 30px;
+    background-color: black;
 }
 .footer-box {
-  position: relative;
+    position: relative;
 }
 footer p {
-  margin: 5px;
+    margin: 5px;
 }
 .footer-rights {
-  color: white;
-  font-weight: bold;
+    color: white;
+    font-weight: bold;
 }
 .footer-email {
-  color: white;
-  font-weight: bold;
-  text-transform: none;
+    color: white;
+    font-weight: bold;
+    text-transform: none;
 }
 .hambogir {
-  width: 50px;
-  padding: 10px;
-  display: none;
+    width: 50px;
+    padding: 10px;
+    display: none;
 }
 .hambogir .bun {
-  width: 80%;
-  height: 5px;
-  background-color: #c0ec3f;
-  border-radius: 5px;
-  margin: 5px;
+    width: 80%;
+    height: 5px;
+    background-color: #c0ec3f;
+    border-radius: 5px;
+    margin: 5px;
 }
 
 /*depertments */
 .departments {
-  /* text-decoration: none; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  color: white;
-  font-family: torek;
+    /* text-decoration: none; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: torek;
 }
 .departments a {
-  color: white;
-  width: 200px;
+    color: white;
+    width: 200px;
 }
 .department-logo {
-  width: 200px;
-  border-radius: 100%;
+    width: 200px;
+    border-radius: 100%;
 }
 
 /* department info */
 .department-info,
-.about {
-  text-align: center;
-  color: white;
-  font-family: torek;
+.about,
+.not-found {
+    text-align: center;
+    color: white;
+    font-family: torek;
 }
 .members-info {
-  margin-top: 75px;
+    margin-top: 75px;
 }
 .member {
-  margin: 50px;
+    margin: 50px;
 }
 .member h5 {
-  margin: 0;
+    margin: 0;
 }
 .member-photo {
-  border-radius: 15px;
-  width: 200px;
+    border-radius: 15px;
+    width: 200px;
 }
 
 /* about */
 .about-buttons {
-  margin: 50px;
+    margin: 50px;
 }
 .about-buttons > * {
-  margin: 10px;
-  padding: 10px;
-  background-color: #c0ec3f;
-  color: black;
-  width: 170px;
-  border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #c0ec3f;
+    color: black;
+    width: 170px;
+    border-radius: 5px;
 }
 
 /* donate */
 .donate {
-  color: white;
-  font-family: torek;
-  text-align: center;
-  margin-bottom: 30px;
+    color: white;
+    font-family: torek;
+    text-align: center;
+    margin-bottom: 30px;
 }
 .donate img {
-  width: 250px;
+    width: 250px;
 }
 
 /* panel mebers */
 .panel-members {
-  color: white;
-  font-family: torek;
-  text-align: center;
+    color: white;
+    font-family: torek;
+    text-align: center;
 }
 .nameNfb {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nameNfb img {
-  margin: 10px;
+    margin: 10px;
 }
 
 @media screen and (max-width: 950px) {
-  .navs a {
-    font-size: medium;
-    width: 140px;
-  }
-  .navs a:nth-child(2) {
-    width: 200px;
-  }
-  .navs a:hover {
-    font-size: larger;
-  }
+    .navs a {
+        font-size: medium;
+        width: 140px;
+    }
+    .navs a:nth-child(2) {
+        width: 200px;
+    }
+    .navs a:hover {
+        font-size: larger;
+    }
 }
 @media screen and (max-width: 680px) {
-  .App-body {
-    font-size: medium;
-  }
-  .App-header {
-    flex-direction: column;
-  }
-  nav {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition-duration: 300ms;
-    transition-timing-function: ease-in-out;
-  }
-  .navs {
-    height: 0;
-    overflow: hidden;
-  }
-  .navs-active {
-    border-top: 1px solid white;
-    height: 150px;
-  }
-  .navs a {
-    width: 100%;
-    margin: 7px;
-    font-size: large;
-    height: 30px;
-  }
+    .App-body {
+        font-size: medium;
+    }
+    .App-header {
+        flex-direction: column;
+    }
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition-duration: 300ms;
+        transition-timing-function: ease-in-out;
+    }
+    .navs {
+        height: 0;
+        overflow: hidden;
+    }
+    .navs-active {
+        border-top: 1px solid white;
+        height: 150px;
+    }
+    .navs a {
+        width: 100%;
+        margin: 7px;
+        font-size: large;
+        height: 30px;
+    }
 
-  .notnavs {
-    width: 100%;
-  }
-  .hambogir {
-    display: block;
-  }
+    .notnavs {
+        width: 100%;
+    }
+    .hambogir {
+        display: block;
+    }
 }
 
 .footer-box {
-  animation: credits 10s linear infinite;
+    animation: credits 10s linear infinite;
 }
 
 @keyframes credits {
-  0% {
-    transform: translateY(-5px);
-  }
-  100% {
-    transform: translateY(-270px);
-  }
+    0% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(-270px);
+    }
 }
